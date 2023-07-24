@@ -36,6 +36,10 @@
   "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "@apollo/server": "^4.8.1",
+    "@as-integrations/fastify": "^2.1.0",
+    "fastify": "^4.20.0",
+    "graphql": "^16.7.1",
     "tslib": "~2.5"
   },
   "volta": {
