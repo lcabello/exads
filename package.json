@@ -1,7 +1,7 @@
 {
-  "name": "node-typescript-boilerplate",
+  "name": "apollo-fastify-dynamodb-lcabello",
   "version": "0.0.0",
-  "description": "Minimalistic boilerplate to quick-start Node.js development in TypeScript.",
+  "description": "",
   "type": "module",
   "engines": {
     "node": ">= 18.12 <19"
@@ -33,7 +33,7 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Luis Cabello <luis.cab.fer@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "@apollo/server": "^4.8.1",
