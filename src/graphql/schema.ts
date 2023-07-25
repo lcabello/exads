@@ -1,14 +1,13 @@
 const typeDefs = `
   type WebPage {
-    id: ID!
     url: String!
     title: String!
     date: String!
-    countWords: Number!
+    countWords: Int!
   }
 
   type Query {
-    getWebPage(id: ID!): WebPage
+    getWebPage(url: String!): WebPage
     getWebPageByField(field: String!, value: String!): WebPage
   }
 
@@ -16,13 +15,13 @@ const typeDefs = `
     url: String!
     title: String!
     date: String!
-    countWords: Number!
+    countWords: Int!
   }
 
   type Mutation {
     createWebPage(input: WebPageInput!): WebPage
-    updateWebPage(id: ID!, input: WebPageInput!): WebPage
-    deleteWebPage(id: ID!): ID
+    updateWebPage(url: String!, input: WebPageInput!): WebPage
+    deleteWebPage(url: String!): Boolean
   }
 `;
 

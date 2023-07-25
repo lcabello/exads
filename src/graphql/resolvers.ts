@@ -42,7 +42,7 @@ const resolvers = {
     }
   },
   Mutation: {
-    createItem: async (_parent, params) => {
+    createWebPage: async (_parent, params) => {
       try {
         const paramsDB = {
           TableName: DB_NAME,
@@ -57,7 +57,7 @@ const resolvers = {
       }
 
     },
-    updateItem: async (_parent, { url, field, value }) => {
+    updateWebPage: async (_parent, { url, field, value }) => {
       try {
         const params = {
           TableName: DB_NAME,
@@ -79,7 +79,7 @@ const resolvers = {
       }
 
     },
-    deleteItem: async (_parent, { url }) => {
+    deleteWebPage: async (_parent, { url }) => {
       try {
         const params = {
           TableName: DB_NAME,
