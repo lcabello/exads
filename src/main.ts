@@ -7,7 +7,6 @@ const start = async () => {
 
   const apollo = await graphqlHandler();
 
-
   app.route({
     url: '/graphql',
     method: ['GET', 'POST', 'OPTIONS'],
