@@ -48,7 +48,7 @@ const resolvers = {
           TableName: DB_NAME,
           Item: params.Item
         };
-        await dynamodb.putItem(paramsDB).promise();
+        await dynamodb.put(paramsDB).promise();
 
         return params.Item;
       } catch (e) {
